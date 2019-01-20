@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .menu li{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            flex:1 1 100%;
+        }
+        .menu li:nth-child(1){
+            background-color: #39ADD1;
+        }
+        .menu li:nth-child(2){
+            background-color: #3079AB;
+        }
+        .menu li:nth-child(3){
+            background-color: #982551;
+        }
+        .menu li:nth-child(4){
+            background-color: #E15258;
+        }
+        .menu li:nth-child(5){
+            background-color: #CC6699;
+        }
+        .menu li:nth-child(6){
+            background-color: #52AC43;
+        }
+        .menu a{
+            text-decoration: none;
+            color: #fff;
+        }
+        @media (min-width: 480px) {
+            .menu li{
+                flex:1 1 50%;
+            }
+        }
+        @media (min-width: 760px) {
+            .menu{
+                flex-flow: row nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li><a href="#">Sass</a></li>
+    <li><a href="#">Ruby</a></li>
+    <li><a href="#">Mongo</a></li>
+</ul>
+</body>
+</html>

@@ -276,4 +276,26 @@ HTML5-CSS3 Review
     - 对多个元素使用box-flex 让浏览器总高度或者总宽度等于浏览器的
     - box-pack box-align 指定元素中的文字图像的对齐方式
 
+### Flex布局
+- 需要布局的父元素(flex container) 弹性容器
+- 弹性子元素(flex item)
+- 主轴main axis 侧轴cross axis
+![Flex布局](./READMEIMG/01.png)
+- flex-direction 主轴 :row水平从左到右|row-revers从右到左|column垂直重上到下|column-reverse垂直重下到上
+- flex-wrap 溢出是否换行 :nowrap不换行|wrap换行|wrap-revers逆序换行
+- flex-flow flex-direction和flex-wrap的复合属性 `:[flex-direction]||[flex-wrap]`
+- justify-content x主轴上的对齐方式 :flex-start左对齐|flex-end右对齐|center居中|space-between第一个和最后一个到边缘 其余均匀分布|space-around全部均匀分布
+- align-items y侧轴上的对齐方式 :flex-start顶对其|flex-end地对其|center|baseline基线对齐|stretch
+- align-content 侧轴有空白时,侧轴上的对齐方式 :flex-start|flex-end|center|space-between|space-around|stretch
+
+- order 控制弹性容器里子元素的顺序 数值小的排前
+- flex-grow 设置弹性元素的扩展比率 
+- flex-shrink 设置弹性子元素的收缩比率
+- flex-basis 设置弹性子元素收缩前默认大小
+- flex flex-grow,flex-shrink,flex-basis属性的复合属性
+- align-self 允许独立的弹性子元素覆盖弹性容器的默认对齐设置 `[侧轴对齐方式]`auto|flex-start|flex-end|center|baseline|stretch
+
+
+
+
 ### 媒体查询
