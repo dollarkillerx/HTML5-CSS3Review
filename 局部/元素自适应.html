@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素自适应</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: -webkit-box;
+            display: -moz-box;
+            border: solid 5px green;
+            -webkit-box-orient: horizontal;
+            /*-webkit-box-orient: vertical;*/
+            width: 500px;
+            height: 400px;
+        }
+        .div1{
+            background-color: #0066cc;
+        }
+        .div2{
+            background-color: #ff39ca;
+            /*-webkit-box-flex: 1;*/
+        }
+        .div3{
+            background-color: #292927;
+        }
+        .div1,.div2,.div3{
+            -webkit-box-flex: 1;
+            box-sizing: border-box;
+            font-size: 30px;
+            color: #fff3cd;
+        }
+    </style>
+</head>
+<body>
+    <h1>元素自适应</h1>
+    <div class="container">
+        <div class="div1">this is Div1</div>
+        <div class="div2">this is Div2</div>
+        <div class="div3">this is Div3</div>
+    </div>
+</body>
+</html>

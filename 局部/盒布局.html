@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+            display: -moz-box;
+            display: -webkit-box;
+        }
+        .left{
+            /*float: left;*/
+            width: 300px;
+            padding: 10px;
+            background-color: green;
+        }
+        .right{
+            /*float: right;*/
+            width: 300px;
+            padding: 10px;
+            background-color: #25a4bb;
+        }
+        .center{
+            width: 400px;
+            /*float: left;*/
+            background-color: #0f6674;
+        }
+        .left,.center,.right{
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>盒布局</h1>
+    <div class="container">
+        <div class="left">
+            <h2>栏目列表</h2>
+            <ul>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+                <li><a href="#">栏目名称</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <p>对于学校而言，“云谷”二字还另有深意：
+                “云＂，作为形容词可解释为“盛、多”。《诗经·齐风·敝笱》里描写齐国贵族女子出嫁，场面十分豪华，“齐子归止，其从如云”，说的是随从像云非常多；云，作为形容词还可以解释为“高”。如，形容一个人很讲义气，“义薄云天”，就是非常崇高的意思。
+
+                “谷”，是良、善的意思。在春秋时，诸侯自称“不谷”，即不善，是谦称。古人称吉日为“谷日”，良晨为“谷旦“。“谷”作为动词，意为“生”、“养”。《诗经·小雅》里歌颂农夫丰收：“我田既臧……以谷我士女。”，意为“我的田地收获了，可以来养我们子民百姓。”
+
+                因此，我们取“云谷”之名，希冀“盛多的良善和崇高在这里得以培养和产生。”此外，在云谷，我们还期望孩子们拥有宝贵的“云谷”品格：既有凌“云”之志，又能虚怀若“谷”，成为具有仁爱精神、独立意志、社会担当、终身学习力和幸福感的地球公民。
+            </p>
+        </div>
+        <div class="right">
+            <h2>推荐文章</h2>
+            <ul>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+                <li><a href="#">推荐文章</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

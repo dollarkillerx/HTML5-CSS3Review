@@ -1,6 +1,14 @@
 # HTML5-CSS3 Review
 HTML5-CSS3 Review
 
+#### IE兼容
+``` 
+<!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+	<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+```
+
 ## 新的网页结构
 - `header`  头
 - `nav` 导航
@@ -236,4 +244,36 @@ HTML5-CSS3 Review
     - inherit
     
 #### CSS3 new 背景和边框的相关样式
-    
+- background-clip
+- background-origin
+- background-size
+- background-size
+- background-break
+- background-image:url()
+- background-repeat:no-repeat 背景不重复
+- border-radius 绘制半径  顺时针
+- border-image 
+
+#### CSS3 动画
+- transform 
+
+这边我就不看了有空再来填坑
+
+## 布局
+- 多栏布局
+    - column-count:栏目数 按栏目数分栏
+    - column-width:指定栏目的宽度来生成分栏
+    - column-gap: 指定栏目与栏目之间的距离
+    - column-rule: 栏目与栏目之间增加一条分割线 `column-rule: solid 3px chartreuse;`
+- 盒布局
+    - box `display: -webkit-box;`
+- 弹性盒布局
+    - box-flex display:flex  `-webkit-box-flex: 1;`
+    - box-ordinal-group 改变元素显示顺序 `-webkit-box-ordinal-group:1` 越小优先级越高
+    - box-orient 改变多个元素排列方向 horizontal水平 vertical垂直
+    - 元素自适应
+    - box-flex 清除弹性盒模型的空白 `-webkit-box-flex: 1;`
+    - 对多个元素使用box-flex 让浏览器总高度或者总宽度等于浏览器的
+    - box-pack box-align 指定元素中的文字图像的对齐方式
+
+### 媒体查询
