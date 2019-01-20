@@ -174,3 +174,66 @@ HTML5-CSS3 Review
     }
 ```
 
+# 盒子模型
+- display
+    - inline-block 属于block盒的一种,BUT同时拥有inline的特点e
+    - vertical-align 默认是底部对齐  vertical-align: top;
+    - inline-table 盒类型 table 前后文字都同行显示
+    - list-item 将多个元素作为list显示
+    - non 当元素指定none时元素不会被显示
+- 实现水平菜单
+
+#### overflow
+- 解决溢出问题
+- overflow:hidden 超出容纳范围文字被隐藏
+- scroll 滚动条
+- auto auto智能一些
+- visible  该咋咋地   
+- overflow-x or overflow-y 超出x or y 执行
+- text-overflow 可以在盒子的末尾显示 “。。。” 当盒中内容x方向超出才有效     
+``` 
+        div{
+            white-space: nowrap;
+            width: 300px;
+            border: solid 1px darkgreen;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+```
+
+#### 盒子阴影
+- box-shadow  x y 模糊半径 color `box-shadow: 6px 6px 3px lightblue;`
+- x y  设置为0时会在盒子周围绘制
+
+#### box-sizing
+>针对元素的宽度高度的计算方法
+- content-box 元素的宽度与高度不包括补白区域及其边框高度
+- border-box 元素高度包括补白区域及其边框高度
+- 默认content-box
+
+### 定位
+- 普通流
+- 浮动
+- 绝对布局
+- position  把元素放在静态的 相对的 绝对的 或者固定的位置中
+    - static
+    - relative 
+    - absolute  脱离
+    - fixed
+- top left right bottom
+- overflow 设置溢出区域发生的事件
+- clip 设置显示形状
+- vertical-align 设置元素垂直对齐方式
+- z-index 设置元素层叠顺序
+- float
+    - left 
+    - right
+    - none 
+    - inherit 从父类继承浮动
+- clear 清除浮动    
+    - left,right
+    - both
+    - inherit
+    
+#### CSS3 new 背景和边框的相关样式
+    
